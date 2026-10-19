@@ -1,0 +1,617 @@
+{
+  "provenance": "synthetic_fixture_not_real_recognition",
+  "pages": [
+    {
+      "ocr": [
+        {
+          "id": "page",
+          "text": "第6页 共87页",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "road",
+          "text": "示例高速公路通信管道施工图",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "group_a",
+          "text": "桥梁两端电力手孔×3",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "group_b",
+          "text": "桥梁两端电力手孔×3",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "station1",
+          "text": "K116+266",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "station2",
+          "text": "K116+324",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "station3",
+          "text": "K116+382",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "station4",
+          "text": "K117+266",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "station5",
+          "text": "K117+324",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "station6",
+          "text": "K117+382",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "branch",
+          "text": "中央分歧1#人孔",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "branch_station",
+          "text": "K116+300",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "camera",
+          "text": "遥控摄像机",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "offset",
+          "text": "距中心线 3m",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "device_distance",
+          "text": "井与摄像机 2m",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "survey",
+          "text": "交通调查站",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        },
+        {
+          "id": "survey_link",
+          "text": "桥梁两端电力手孔接交通调查站",
+          "bbox": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "confidence": 1.0
+        }
+      ],
+      "observation": {
+        "page_number": {
+          "text_id": "page",
+          "value": "第6页 共87页"
+        },
+        "road_title": {
+          "text_id": "road",
+          "value": "示例高速公路通信管道施工图"
+        },
+        "title_source": "标题栏",
+        "wells": [
+          {
+            "id": "w1",
+            "name": {
+              "text_id": "group_a",
+              "value": "桥梁两端电力手孔×3"
+            },
+            "group_id": "a",
+            "bbox": [
+              0.1,
+              0.3,
+              0.12000000000000001,
+              0.32
+            ],
+            "symbol_evidence": "实际第1个正方形符号及引线",
+            "shape": "正方形",
+            "legend_type": "无法判断",
+            "legend_evidence": "",
+            "number": null,
+            "number_relation": "无法判断",
+            "main_station": {
+              "text_id": "station1",
+              "value": "K116+266"
+            },
+            "ramp_station": null,
+            "is_ramp": false,
+            "station_evidence": "矩形框内第1个符号与对应桩号引线",
+            "position": null,
+            "visual_position": "无法判断",
+            "position_evidence": "",
+            "direction": null,
+            "offset_m": {
+              "text_id": "offset",
+              "value": "3m"
+            },
+            "offset_evidence": "尺寸线明确从道路中心线到 w1 中心",
+            "connections_complete": true,
+            "edge_truncated": false,
+            "cross_page": false,
+            "confidence": 1,
+            "notes": []
+          },
+          {
+            "id": "w2",
+            "name": {
+              "text_id": "group_a",
+              "value": "桥梁两端电力手孔×3"
+            },
+            "group_id": "a",
+            "bbox": [
+              0.2,
+              0.3,
+              0.22,
+              0.32
+            ],
+            "symbol_evidence": "实际第2个正方形符号及引线",
+            "shape": "正方形",
+            "legend_type": "无法判断",
+            "legend_evidence": "",
+            "number": null,
+            "number_relation": "无法判断",
+            "main_station": {
+              "text_id": "station2",
+              "value": "K116+324"
+            },
+            "ramp_station": null,
+            "is_ramp": false,
+            "station_evidence": "矩形框内第2个符号与对应桩号引线",
+            "position": null,
+            "visual_position": "无法判断",
+            "position_evidence": "",
+            "direction": null,
+            "offset_m": null,
+            "offset_evidence": "",
+            "connections_complete": true,
+            "edge_truncated": false,
+            "cross_page": false,
+            "confidence": 1,
+            "notes": []
+          },
+          {
+            "id": "w3",
+            "name": {
+              "text_id": "group_a",
+              "value": "桥梁两端电力手孔×3"
+            },
+            "group_id": "a",
+            "bbox": [
+              0.3,
+              0.3,
+              0.32,
+              0.32
+            ],
+            "symbol_evidence": "实际第3个正方形符号及引线",
+            "shape": "正方形",
+            "legend_type": "无法判断",
+            "legend_evidence": "",
+            "number": null,
+            "number_relation": "无法判断",
+            "main_station": {
+              "text_id": "station3",
+              "value": "K116+382"
+            },
+            "ramp_station": null,
+            "is_ramp": false,
+            "station_evidence": "矩形框内第3个符号与对应桩号引线",
+            "position": null,
+            "visual_position": "无法判断",
+            "position_evidence": "",
+            "direction": null,
+            "offset_m": null,
+            "offset_evidence": "",
+            "connections_complete": true,
+            "edge_truncated": false,
+            "cross_page": false,
+            "confidence": 1,
+            "notes": []
+          },
+          {
+            "id": "w4",
+            "name": {
+              "text_id": "group_b",
+              "value": "桥梁两端电力手孔×3"
+            },
+            "group_id": "b",
+            "bbox": [
+              0.4,
+              0.3,
+              0.42000000000000004,
+              0.32
+            ],
+            "symbol_evidence": "实际第4个正方形符号及引线",
+            "shape": "正方形",
+            "legend_type": "无法判断",
+            "legend_evidence": "",
+            "number": null,
+            "number_relation": "无法判断",
+            "main_station": {
+              "text_id": "station4",
+              "value": "K117+266"
+            },
+            "ramp_station": null,
+            "is_ramp": false,
+            "station_evidence": "矩形框内第4个符号与对应桩号引线",
+            "position": null,
+            "visual_position": "无法判断",
+            "position_evidence": "",
+            "direction": null,
+            "offset_m": null,
+            "offset_evidence": "",
+            "connections_complete": true,
+            "edge_truncated": false,
+            "cross_page": false,
+            "confidence": 1,
+            "notes": []
+          },
+          {
+            "id": "w5",
+            "name": {
+              "text_id": "group_b",
+              "value": "桥梁两端电力手孔×3"
+            },
+            "group_id": "b",
+            "bbox": [
+              0.5,
+              0.3,
+              0.52,
+              0.32
+            ],
+            "symbol_evidence": "实际第5个正方形符号及引线",
+            "shape": "正方形",
+            "legend_type": "无法判断",
+            "legend_evidence": "",
+            "number": null,
+            "number_relation": "无法判断",
+            "main_station": {
+              "text_id": "station5",
+              "value": "K117+324"
+            },
+            "ramp_station": null,
+            "is_ramp": false,
+            "station_evidence": "矩形框内第5个符号与对应桩号引线",
+            "position": null,
+            "visual_position": "无法判断",
+            "position_evidence": "",
+            "direction": null,
+            "offset_m": null,
+            "offset_evidence": "",
+            "connections_complete": true,
+            "edge_truncated": false,
+            "cross_page": false,
+            "confidence": 1,
+            "notes": []
+          },
+          {
+            "id": "w6",
+            "name": {
+              "text_id": "group_b",
+              "value": "桥梁两端电力手孔×3"
+            },
+            "group_id": "b",
+            "bbox": [
+              0.6,
+              0.3,
+              0.62,
+              0.32
+            ],
+            "symbol_evidence": "实际第6个正方形符号及引线",
+            "shape": "正方形",
+            "legend_type": "无法判断",
+            "legend_evidence": "",
+            "number": null,
+            "number_relation": "无法判断",
+            "main_station": {
+              "text_id": "station6",
+              "value": "K117+382"
+            },
+            "ramp_station": null,
+            "is_ramp": false,
+            "station_evidence": "矩形框内第6个符号与对应桩号引线",
+            "position": null,
+            "visual_position": "无法判断",
+            "position_evidence": "",
+            "direction": null,
+            "offset_m": null,
+            "offset_evidence": "",
+            "connections_complete": true,
+            "edge_truncated": false,
+            "cross_page": false,
+            "confidence": 1,
+            "notes": []
+          },
+          {
+            "id": "w7",
+            "name": {
+              "text_id": "branch",
+              "value": "中央分歧1#人孔"
+            },
+            "group_id": "branch",
+            "bbox": [
+              0.35,
+              0.4,
+              0.37,
+              0.42
+            ],
+            "symbol_evidence": "圆形支路节点",
+            "shape": "圆形",
+            "legend_type": "无法判断",
+            "legend_evidence": "",
+            "number": null,
+            "number_relation": "无法判断",
+            "main_station": {
+              "text_id": "branch_station",
+              "value": "K116+300"
+            },
+            "ramp_station": null,
+            "is_ramp": false,
+            "station_evidence": "节点独立桩号引线",
+            "position": null,
+            "visual_position": "无法判断",
+            "position_evidence": "",
+            "direction": null,
+            "offset_m": null,
+            "offset_evidence": "",
+            "connections_complete": true,
+            "edge_truncated": false,
+            "cross_page": false,
+            "confidence": 1,
+            "notes": []
+          }
+        ],
+        "devices": [
+          {
+            "id": "d1",
+            "name": {
+              "text_id": "camera",
+              "value": "遥控摄像机"
+            },
+            "station": null,
+            "station_evidence": "",
+            "only_code": false
+          },
+          {
+            "id": "d2",
+            "name": {
+              "text_id": "survey",
+              "value": "交通调查站"
+            },
+            "station": null,
+            "station_evidence": "",
+            "only_code": false
+          }
+        ],
+        "edges": [
+          {
+            "source": "w1",
+            "target": "w2",
+            "kind": "管线",
+            "basis": "引线",
+            "evidence": "沿主线可追踪的连续管线",
+            "text_ref": null,
+            "local": true,
+            "along_mainline": true,
+            "distance_m": null,
+            "distance_evidence": ""
+          },
+          {
+            "source": "w2",
+            "target": "w3",
+            "kind": "管线",
+            "basis": "引线",
+            "evidence": "沿主线可追踪的连续管线",
+            "text_ref": null,
+            "local": true,
+            "along_mainline": true,
+            "distance_m": null,
+            "distance_evidence": ""
+          },
+          {
+            "source": "w3",
+            "target": "w4",
+            "kind": "管线",
+            "basis": "引线",
+            "evidence": "沿主线可追踪的连续管线",
+            "text_ref": null,
+            "local": true,
+            "along_mainline": true,
+            "distance_m": null,
+            "distance_evidence": ""
+          },
+          {
+            "source": "w4",
+            "target": "w5",
+            "kind": "管线",
+            "basis": "引线",
+            "evidence": "沿主线可追踪的连续管线",
+            "text_ref": null,
+            "local": true,
+            "along_mainline": true,
+            "distance_m": null,
+            "distance_evidence": ""
+          },
+          {
+            "source": "w5",
+            "target": "w6",
+            "kind": "管线",
+            "basis": "引线",
+            "evidence": "沿主线可追踪的连续管线",
+            "text_ref": null,
+            "local": true,
+            "along_mainline": true,
+            "distance_m": null,
+            "distance_evidence": ""
+          },
+          {
+            "source": "w7",
+            "target": "w1",
+            "kind": "管线",
+            "basis": "引线",
+            "evidence": "局部支路连接",
+            "text_ref": null,
+            "local": true,
+            "along_mainline": false,
+            "distance_m": null,
+            "distance_evidence": ""
+          },
+          {
+            "source": "w7",
+            "target": "w2",
+            "kind": "管线",
+            "basis": "引线",
+            "evidence": "局部支路连接",
+            "text_ref": null,
+            "local": true,
+            "along_mainline": false,
+            "distance_m": null,
+            "distance_evidence": ""
+          },
+          {
+            "source": "w1",
+            "target": "d1",
+            "kind": "设备",
+            "basis": "引线",
+            "evidence": "井到摄像机明确连线",
+            "text_ref": null,
+            "local": true,
+            "along_mainline": false,
+            "distance_m": {
+              "text_id": "device_distance",
+              "value": "2m"
+            },
+            "distance_evidence": "尺寸线两端为井与摄像机"
+          },
+          {
+            "source": "w3",
+            "target": "d2",
+            "kind": "设备",
+            "basis": "文本",
+            "evidence": "局部标注明确描述连接",
+            "text_ref": {
+              "text_id": "survey_link",
+              "value": "桥梁两端电力手孔接交通调查站"
+            },
+            "local": true,
+            "along_mainline": false,
+            "distance_m": null,
+            "distance_evidence": ""
+          }
+        ],
+        "notes": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# 本机密钥与环境配置；只提交不含密钥的配置示例。
+.env
+.env.*
+!.env.example
+
+# Python环境、缓存和安装生成文件。
+.venv/
+.ocr-venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 每次运行生成的结果、服务日志和检查点。
+outputs/
+runtime/
+*.sqlite*
+
+# 本机实施记录、历史压缩包和验证中间文件不随源码上传。
+work_records/
+
+# 编辑器、构建产物和本机规划记录。
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+build/
+dist/
+*.log
+*.pem
+*.key
+.coverage*
+htmlcov/
+task_plan.md
+findings.md
+progress.md
