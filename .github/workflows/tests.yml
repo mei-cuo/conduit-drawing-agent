@@ -1,15 +1,15 @@
-name: Tests
+name: Agent checks
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
   offline:
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest]
         python: ['3.11', '3.12']
-    runs-on: ${{ matrix.os }}
     env:
       LANGSMITH_TRACING: 'false'
     steps:
@@ -18,8 +18,17 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
           cache: pip
-          cache-dependency-path: pyproject.toml
-      - run: python -m pip install -e ".[dev]"
+      - run: python -m pip install -e ".[dev,api]"
+      - run: python -m ruff check src tests scripts
+      - run: python -m ruff format --check src tests scripts
       - run: python -m pytest -q
-      - run: python -m conduit --mock --simulate-error --out outputs/ci-demo
-      - run: python -m conduit --input data/examples/reference_drawing.png --ocr sidecar --ocr-json data/examples/reference_ocr_paddle.json --vision-backend agent-file --agent-response data/examples/reference_agent_response.json --out outputs/ci-reference
+      - run: python -m drawflow demo --run-id ci-demo --simulate-error
+      - run: python -m drawflow evaluate --report outputs/evaluation.json
+      - run: python -m build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evidence-${{ matrix.os }}-${{ matrix.python }}
+          path: |
+            outputs/ci-demo/*.json
+            outputs/evaluation.json
+            dist/*

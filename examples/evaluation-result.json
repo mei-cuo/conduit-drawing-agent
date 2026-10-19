@@ -1,0 +1,47 @@
+{
+  "dataset": "bundled-synthetic-v1",
+  "retrieval_cases": [
+    {
+      "query": "主线桩号引线和表格列如何对应",
+      "expected_source": "chainage.md",
+      "sources": [
+        "chainage.md",
+        "naming.md",
+        "chainage.md"
+      ],
+      "rank": 1,
+      "hit_at_3": true
+    },
+    {
+      "query": "沿主线连接两个邻井如何区分直通分歧支路",
+      "expected_source": "topology.md",
+      "sources": [
+        "topology.md",
+        "chainage.md",
+        "chainage.md"
+      ],
+      "rank": 1,
+      "hit_at_3": true
+    },
+    {
+      "query": "同名多井标注分组从左到右编号",
+      "expected_source": "naming.md",
+      "sources": [
+        "naming.md",
+        "naming.md",
+        "naming.md"
+      ],
+      "rank": 1,
+      "hit_at_3": true
+    }
+  ],
+  "retrieval_hit_at_3": 1.0,
+  "retrieval_mrr": 1.0,
+  "record_exact_match": 1.0,
+  "record_count": 3,
+  "schema_valid": true,
+  "remaining_errors": 0,
+  "repair_attempts": 1,
+  "tools_used": 4,
+  "workflow_status": "completed"
+}

@@ -1,0 +1,7 @@
+{
+  "approved": true,
+  "reviewer": "portfolio-reviewer",
+  "reason": "核对原图、引线和桩号标注，确认第一口井对应 K116+266。",
+  "corrections": [{"object_id": "well-1", "field": "主线桩号", "value": "K116+266", "evidence_ids": ["p1-ocr-3", "vision-mainline"]}],
+  "memories": [{"key": "group-naming", "kind": "convention", "content": "同一标注组按从左到右独立编号，原始数量标注保留在 raw_name。"}]
+}

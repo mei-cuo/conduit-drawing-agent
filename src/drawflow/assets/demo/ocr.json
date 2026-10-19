@@ -1,0 +1,64 @@
+{
+  "evidence": [
+    {
+      "evidence_id": "p1-ocr-1",
+      "kind": "ocr",
+      "page": "p1",
+      "text": "第6页 演示高速公路通信管道图",
+      "bbox": [
+        24,
+        16,
+        750,
+        48
+      ]
+    },
+    {
+      "evidence_id": "p1-ocr-2",
+      "kind": "ocr",
+      "page": "p1",
+      "text": "桥梁两端电力手孔×3",
+      "bbox": [
+        24,
+        65,
+        400,
+        95
+      ]
+    },
+    {
+      "evidence_id": "p1-ocr-3",
+      "kind": "ocr",
+      "page": "p1",
+      "text": "K116+266",
+      "bbox": [
+        100,
+        115,
+        230,
+        145
+      ]
+    },
+    {
+      "evidence_id": "p1-ocr-4",
+      "kind": "ocr",
+      "page": "p1",
+      "text": "K116+324",
+      "bbox": [
+        300,
+        115,
+        430,
+        145
+      ]
+    },
+    {
+      "evidence_id": "p1-ocr-5",
+      "kind": "ocr",
+      "page": "p1",
+      "text": "K116+382",
+      "bbox": [
+        500,
+        115,
+        630,
+        145
+      ]
+    }
+  ]
+}

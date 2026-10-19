@@ -1,9 +1,14 @@
-# 参与开发
+# 开发指南
 
-按 README 创建虚拟环境，执行 `python -m pip install -e ".[dev]"`。
+```powershell
+python -m pip install -e ".[dev,api]"
+python -m pytest -q
+python -m drawflow evaluate
+python -m build
+```
 
-修改后运行 `python -m pytest -q`，再运行离线 mock 和参考回放。新识别规则需说明证据来源，避免将人工转录结果描述为模型准确率。
+规则变更同时维护 knowledge、Skill、结构化 Prompt 和相应用例。修改证据契约时，同步示例、复核文件和 contracts 文档。工具参数始终绑定任务上下文；长期记忆通过人工复核提交，保持项目隔离。
 
-提交前检查 `git status --short` 和 `git diff --cached`。不提交密钥、客户图纸、运行日志、数据库或未经授权的数据。模型与 OCR 配置只写入本机 `.env`；新增配置同时更新 `.env.example` 和相关文档。
+新增模型后端实现 think / extract 接口，Embedding 后端遵循 LangChain Embeddings。新增 OCR 后端应返回规范化 Evidence，并说明像素/归一化坐标转换。
 
-说明问题时附复现命令、Python 版本、预期及实际行为，并移除敏感内容。提交改动时说明原因与验证方式。
+提交说明包含问题、变化和验证方式。运行日志、检查点、密钥及个人图纸保留在本机忽略目录。

@@ -1,9 +1,11 @@
 # 项目约定
 
-- 从仓库根目录安装：`python -m pip install -e ".[dev]"`；验证：`python -m pytest -q`。
-- CLI 为 `python -m conduit`；业务逻辑位于 `src/conduit/`。
-- 默认运行产物放入 `outputs/` 和 `runtime/`，不要提交 `.env`、数据库、日志或 `work_records/`。
-- 新配置同步更新 `.env.example` 和对应部署文档。
-- 图纸、OCR、代理响应通过摘要绑定；不要用旧响应识别新图纸。
-- 不将合成数据或历史回放描述为实时识别或准确率结果。
-- 架构见 `docs/workflow_design.md`，安装见 `README.md`。
+- 安装：`python -m pip install -e ".[dev,api]"`；验证：`python -m pytest -q`。
+- Agent 流程在 graph.py，CLI/API 共用 runner.py。
+- 知识、Prompt、Skill 和演示资源在 src/drawflow/assets，需随 wheel 打包。
+- OCR 原始快照不可被模型覆盖；字段修订再次运行证据校验。
+- 长期记忆按项目隔离，只从通过的人工复核写入。
+- 工具调用绑定任务页；模型参数不选择本机任意路径。
+- 运行产物放 outputs/ 和 runtime/，密钥使用 .env。
+- 配置变更同步 .env.example 与 docs/deployment.md。
+- 设计见 docs/architecture.md，字段见 docs/contracts.md。

@@ -1,6 +1,0 @@
-# Separate compatible environment; install PaddlePaddle for your CPU/CUDA from official docs first.
-paddleocr>=3.3,<4
-fastapi>=0.115,<1
-uvicorn>=0.30,<1
-numpy>=1.26,<3
-Pillow>=11,<13

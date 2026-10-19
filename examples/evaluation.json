@@ -1,0 +1,7 @@
+{
+  "retrieval": [
+    {"query": "主线桩号引线和表格列如何对应", "source": "chainage.md"},
+    {"query": "沿主线连接两个邻井如何区分直通分歧支路", "source": "topology.md"},
+    {"query": "同名多井标注分组从左到右编号", "source": "naming.md"}
+  ]
+}
